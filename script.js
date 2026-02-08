@@ -1,6 +1,7 @@
 // Function to fetch menu items from Google Sheetasync function loadMenu() {
     const sheetId = '1nzr13DaAJBZpxcmHduZeTLwDtAVuz0Md959wsmj_G9o';
-    const url = `https://docs.google.com/spreadsheets/d/${sheetId}/gviz/tq?sheet=Sheet1`;
+    const url = `https://docs.google.com/spreadsheets/d/1nzr13DaAJBZpxcmHduZeTLwDtAVuz0Md959wsmj_G9o/gviz/tq?sheet=Sheet1
+`;
 
     try {
         const response = await fetch(url);
@@ -34,4 +35,5 @@
 }
 
 window.addEventListener('load', loadMenu);
+
 
