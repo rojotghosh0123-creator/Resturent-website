@@ -1,7 +1,8 @@
 // Function to fetch menu items from Google Sheet
 async function loadMenu() {
     const sheetId = 'YOUR_GOOGLE_SHEET_ID'; // Replace with your actual Google Sheet ID (see Step 1)
-    const url = `https://tinyurl.com/yy5zcyvv`; // Assumes sheet name is "Sheet1"; change if different
+    const url = `https://docs.google.com/spreadsheets/d/1nzr13DaAJBZpxcmHduZeTLwDtAVuz0Md959wsmj_G9o/view?usp=sharing
+`; // Assumes sheet name is "Sheet1"; change if different
 
     try {
         const response = await fetch(url);
@@ -41,4 +42,5 @@ document.getElementById('order-btn').addEventListener('click', function() {
 });
 
 // Load menu when page loads
+
 window.addEventListener('load', loadMenu);
